@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Teal"
+    tools:context=".BikeCompanyList">
+
+
+  <LinearLayout
+
+      android:id="@+id/linlay"
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="match_parent">
+
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/my_toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="?attr/colorPrimary"
+          android:elevation="4sp"
+          android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+          app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/s_bar"-->
+        <!--android:background="@drawable/search_box"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:hint="Search company"-->
+        <!--android:drawableLeft="@android:drawable/ic_menu_search"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_height="50dp"/>-->
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/list_rec_view"
+        android:background="@color/TransTeal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+  </LinearLayout>
+
+
+</RelativeLayout>
